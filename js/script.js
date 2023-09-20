@@ -1,13 +1,21 @@
+
+
 window.onscroll = function(){
     
     scroll = document.documentElement.scrollTop;
 
     header = document.getElementById("header");
+    logo = document.getElementById("logoimg");
+    textnav = document.getElementById("sechnavtext");
 
     if (scroll > 15){
         header.classList.add('sec_h_mod');
+        logo.classList.remove('sec_h_logo_mod');
+        textnav.classList.add('sec_h_nav_text_mod');
     }else{
         header.classList.remove('sec_h_mod');
+        logo.classList.add('sec_h_logo_mod');
+        textnav.classList.remove('sec_h_nav_text_mod');
     };
 
 }
@@ -33,3 +41,11 @@ window.addEventListener("resize", function(){
         nav.classList.remove('move_nav');
     }
 })
+/*
+window.addEventListener("click", function(){
+    header = document.getElementById("header");
+    body = document.getElementById("secall");
+
+    header.classList.toggle("header_mod");
+    body.classList.toggle("sec_all_mod");
+})*/
