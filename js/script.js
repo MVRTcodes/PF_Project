@@ -6,16 +6,28 @@ window.onscroll = function(){
 
     header = document.getElementById("header");
     logo = document.getElementById("logoimg");
-    textnav = document.getElementById("sechnavtext");
+    btnmenu = document.getElementById("btnmenu");
+    textnav1 = document.getElementById("shnt1");
+    textnav2 = document.getElementById("shnt2");
+    textnav3 = document.getElementById("shnt3");
+    textnav4 = document.getElementById("shnt4");
 
     if (scroll > 15){
         header.classList.add('sec_h_mod');
         logo.classList.remove('sec_h_logo_mod');
-        textnav.classList.add('sec_h_nav_text_mod');
+        btnmenu.classList.remove('sec_h_btnmenu_mod');
+        textnav1.classList.add('sec_h_nav_text_mod');
+        textnav2.classList.add('sec_h_nav_text_mod');
+        textnav3.classList.add('sec_h_nav_text_mod');
+        textnav4.classList.add('sec_h_nav_text_mod');
     }else{
         header.classList.remove('sec_h_mod');
         logo.classList.add('sec_h_logo_mod');
-        textnav.classList.remove('sec_h_nav_text_mod');
+        btnmenu.classList.add('sec_h_btnmenu_mod');
+        textnav1.classList.remove('sec_h_nav_text_mod');
+        textnav2.classList.remove('sec_h_nav_text_mod');
+        textnav3.classList.remove('sec_h_nav_text_mod');
+        textnav4.classList.remove('sec_h_nav_text_mod');
     };
 
 }
